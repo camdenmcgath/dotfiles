@@ -32,7 +32,10 @@ return {
           cwd = vim.fs.joinpath(vim.fn.stdpath("data"), "lazy")
         }
       end)
-
+      vim.keymap.set("n", "<space>gf", require('telescope.builtin').git_files)
+      vim.keymap.set("n", "<space>h", function() 
+        require('telescope.builtin').find_files { cwd = vim.loop.os_homedir()}
+      end)
       require "config.telescope.multigrep".setup()
     end
   },
