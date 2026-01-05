@@ -22,6 +22,8 @@ return {
 			require("mason-lspconfig").setup({
 				ensure_installed = {
 					"lua_ls",
+					"gopls",
+					"rust_analyzer",
 				}
 			})
 			vim.api.nvim_create_autocmd('LspAttach', {
