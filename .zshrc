@@ -40,3 +40,5 @@ alias config='/usr/bin/git --git-dir=/Users/cmcgath/dotfiles/ --work-tree=/Users
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
+alias ls='eza'
+alias cd='z'
