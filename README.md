@@ -27,3 +27,6 @@ dra
 fish
 nushell
 
+# Dotfiles
+Generic dotfile configs are included in this repo. However, some information is machine sensitive. Create a $HOME/dotfile-exts/ directory 
+with extra files that will be sourced at the end of the zshrc (or any other file that wants to consume them).

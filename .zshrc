@@ -35,10 +35,17 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 
 # dotflie management
-alias config='/usr/bin/git --git-dir=/Users/cmcgath/dotfiles/ --work-tree=/Users/cmcgath'
+alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+config config --local status.showUntrackedFiles no
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 alias ls='eza'
 alias cd='z'
+
+for FILE in $HOME/dotfile-exts/.[^.]*; do
+    source $FILE
+done
+
+fastfetch
