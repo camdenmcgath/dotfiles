@@ -21,6 +21,7 @@ return {
                     "lua_ls",
                     "gopls",
                     "rust_analyzer",
+                    "pylsp",
                 }
             })
             vim.api.nvim_create_autocmd('LspAttach', {

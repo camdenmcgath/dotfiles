@@ -26,6 +26,7 @@ fzf
 dra
 fish
 nushell
+fastfetch
 
 # Dotfiles
 Generic dotfile configs are included in this repo. However, some information is machine sensitive. Create a $HOME/dotfile-exts/ directory 
